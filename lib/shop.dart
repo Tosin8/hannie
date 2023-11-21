@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hannie/splash.dart';
 import 'package:page_transition/page_transition.dart';
 
 import 'category.dart';
-import 'splash.dart';
 
 class Shop extends StatefulWidget {
   const Shop({super.key});
@@ -24,7 +24,7 @@ class _ShopState extends State<Shop> {
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
-                        'assets/ecommerce/1.jpg',
+                        'assets/image/1.jpg',
                       ),
                       fit: BoxFit.cover)),
               child: Container(
@@ -47,7 +47,7 @@ class _ShopState extends State<Shop> {
                                 Navigator.push(
                                     context,
                                     PageTransition(
-                                        child: const day19(),
+                                        child: const Splash(),
                                         type: PageTransitionType.fade));
                               },
                               icon: const Icon(Icons.arrow_back_ios,
@@ -119,18 +119,16 @@ class _ShopState extends State<Shop> {
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
+                          makeCategory('assets/images/4.jpg', 'Shoes', 'shoes'),
                           makeCategory(
-                              'assets/ecommerce/4.jpg', 'Shoes', 'shoes'),
+                              'assets/images/5.jpg', 'Clothes', 'clothes'),
                           makeCategory(
-                              'assets/ecommerce/5.jpg', 'Clothes', 'clothes'),
-                          makeCategory('assets/ecommerce/7.jpg', 'Fragrance',
-                              'fragrance'),
+                              'assets/images/7.jpg', 'Fragrance', 'fragrance'),
                           makeCategory(
-                              'assets/ecommerce/6.jpg', 'Beauty', 'beauty'),
+                              'assets/images/6.jpg', 'Beauty', 'beauty'),
                           makeCategory(
-                              'assets/ecommerce/8.jpg', 'Styling', 'styling'),
-                          makeCategory(
-                              'assets/ecommerce/9.jpg', 'Bags', 'bags'),
+                              'assets/images/8.jpg', 'Styling', 'styling'),
+                          makeCategory('assets/images/9.jpg', 'Bags', 'bags'),
                         ],
                       ),
                     ),
@@ -155,13 +153,12 @@ class _ShopState extends State<Shop> {
                         scrollDirection: Axis.horizontal,
                         children: [
                           BestSelling(
-                              image: 'assets/ecommerce/10.jpg',
+                              image: 'assets/images/10.jpg',
                               title: 'Decorations'),
                           BestSelling(
-                              image: 'assets/ecommerce/11.jpg', title: 'Techs'),
+                              image: 'assets/images/11.jpg', title: 'Techs'),
                           BestSelling(
-                              image: 'assets/ecommerce/12.jpg',
-                              title: 'Kitchens'),
+                              image: 'assets/images/12.jpg', title: 'Kitchens'),
                         ],
                       ),
                     ),

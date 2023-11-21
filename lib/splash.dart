@@ -3,14 +3,14 @@ import 'package:page_transition/page_transition.dart';
 
 import 'shop.dart';
 
-class day19 extends StatefulWidget {
-  const day19({super.key});
+class Splash extends StatefulWidget {
+  const Splash({super.key});
 
   @override
-  State<day19> createState() => _day19State();
+  State<Splash> createState() => _SplashState();
 }
 
-class _day19State extends State<day19> with TickerProviderStateMixin {
+class _SplashState extends State<Splash> with TickerProviderStateMixin {
   late AnimationController _scaleController;
   late Animation<double> _scaleAnimation;
 
